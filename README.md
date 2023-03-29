@@ -1,3 +1,9 @@
+# Three.js
+
+## Inspired by Freecodecamp
+
+https://hexhad.github.io/minecraft-three-js/
+
 ## ingrediants
 
 ```
