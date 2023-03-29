@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/minecraft-three-js/static/css/main.5f0e3a1d.css",
-    "main.js": "/minecraft-three-js/static/js/main.12175161.js",
+    "main.js": "/minecraft-three-js/static/js/main.861e1eaf.js",
     "static/js/787.bf257ac9.chunk.js": "/minecraft-three-js/static/js/787.bf257ac9.chunk.js",
     "index.html": "/minecraft-three-js/index.html",
     "main.5f0e3a1d.css.map": "/minecraft-three-js/static/css/main.5f0e3a1d.css.map",
-    "main.12175161.js.map": "/minecraft-three-js/static/js/main.12175161.js.map",
+    "main.861e1eaf.js.map": "/minecraft-three-js/static/js/main.861e1eaf.js.map",
     "787.bf257ac9.chunk.js.map": "/minecraft-three-js/static/js/787.bf257ac9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5f0e3a1d.css",
-    "static/js/main.12175161.js"
+    "static/js/main.861e1eaf.js"
   ]
 }
