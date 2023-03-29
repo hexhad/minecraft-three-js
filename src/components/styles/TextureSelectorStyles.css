@@ -1,0 +1,17 @@
+.tex-visible {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(5); 
+}
+img {
+  border-radius: 100%;
+  margin: 0 1px;
+}
+.active {
+  margin: 0 5px;
+  border-width:2px;
+  border-style: solid;
+  border-color: cadetblue;
+}

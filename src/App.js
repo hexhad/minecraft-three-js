@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './App.css'
+import { Canvas } from "@react-three/fiber";
+import { Sky } from "@react-three/drei";
+import { Physics } from "@react-three/cannon";
+import { Ground } from "./components/Ground";
+import { Player } from "./components/Player";
+import { FirstPersionView } from "./components/FirstPersionView";
+import { Cubes } from "./components/Cubes";
+import { TextureSelector } from "./components/TextureSelector";
+import { Menu } from "./components/Menu.js";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <div>outside canvas</div> */}
+      <Canvas>
+        <Sky sunPosition={[200, 200, 200]} />
+        <ambientLight intensity={0.5} />
+        <FirstPersionView/>
+        <Physics>
+          <Player/>
+          <Cubes/>
+          <Ground />
+        </Physics>
+      </Canvas>
+      <div className="middle-target">+</div>
+      <TextureSelector/>
+      <Menu/>
+    </>
   );
 }
-
-export default App;
