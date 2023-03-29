@@ -4,8 +4,11 @@
 
 https://hexhad.github.io/minecraft-three-js/
 
-## ingrediants
+## Preview
 
+![](/imgs/img.JPG)
+
+## Ingrediants
 ```
 @react-three/cannon
 @react-three/drei

@@ -21,13 +21,13 @@ export const TextureSelector = () => {
     };
     const pressedTexture = Object.entries(textures).find(([k, v]) => v);
     if (pressedTexture) {
-      console.log(pressedTexture[0]);
+    //   console.log(pressedTexture[0]);
       setTexture(pressedTexture[0]);
     }
   }, [setTexture, dirt, grass, glass, wood, log]);
 
   useEffect(() => {
-    console.log("activeTexture", activeTexture);
+    // console.log("activeTexture", activeTexture);
     const visibilityTimeout = setTimeout(() => {
       setVisible(false);
     }, 2000);

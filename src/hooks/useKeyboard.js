@@ -63,7 +63,7 @@ export const useKeyboard = () => {
     };
   }, [handleKeyUp, handleKeyDown]);
 
-  console.log('actions', actions);
+  // console.log('actions', actions);
 
   return actions;
 };
