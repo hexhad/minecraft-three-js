@@ -42,6 +42,7 @@ export const useStore = create((set) => ({
   },
   saveWorld: () => {
     set((prev) => {
+      console.log(prev.cubes);
       setLocalStorage("cubes", prev.cubes);
     });
   },
