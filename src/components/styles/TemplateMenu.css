@@ -1,0 +1,22 @@
+.temp-menu {
+  position: absolute;
+  color: #fff;
+  top: 80px;
+  left: 15px;
+  background-color: azure;
+  border-radius: 4px;
+  padding: 10px;
+}
+.temp-text{
+  color: black;
+  font-size: 15px;
+}
+.temp-btn {
+  background-color: black;
+  color: #fff;
+  margin: 0 5px;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 15px;
+}
