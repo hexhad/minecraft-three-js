@@ -6,6 +6,7 @@ function actionByKey(key) {
     KeyS: "moveBackward",
     KeyA: "moveLeft",
     KeyD: "moveRight",
+    ShiftLeft: "run",
     Space: "jump",
     Digit1: "dirt",
     Digit2: "grass",
@@ -17,21 +18,23 @@ function actionByKey(key) {
 }
 
 export const useKeyboard = () => {
-    const [actions, setActions] = useState({
-		moveForward: false,
-		moveBackward: false,
-		moveLeft: false,
-		moveRight: false,
-		jump: false,
-		dirt: false,
-		grass: false,
-		glass: false,
-		wood: false,
-		log: false,
-	})
+  const [actions, setActions] = useState({
+    moveForward: false,
+    moveBackward: false,
+    moveLeft: false,
+    moveRight: false,
+    jump: false,
+    dirt: false,
+    grass: false,
+    glass: false,
+    wood: false,
+    log: false,
+    run: false,
+  });
 
   const handleKeyDown = useCallback((e) => {
     const action = actionByKey(e.code);
+    console.log(e.code);
     if (action) {
       setActions((prev) => {
         return {
@@ -41,6 +44,7 @@ export const useKeyboard = () => {
       });
     }
   }, []);
+
   const handleKeyUp = useCallback((e) => {
     const action = actionByKey(e.code);
     if (action) {

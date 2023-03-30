@@ -4,11 +4,10 @@ import { useRef, useEffect } from "react";
 import { Vector3 } from "three";
 import { useKeyboard } from "../hooks/useKeyboard";
 const JUMP_FORCE = 3;
-const SPEED = 3;
+let SPEED = 3;
 
 export const Player = () => {
-  const { moveForward, moveBackward, moveLeft, moveRight, jump } =
-    useKeyboard();
+  const { moveForward, moveBackward, moveLeft, moveRight, jump, run } = useKeyboard();
   //   console.log(
   //     "actions",
   //     Object.entries(actions).filter(([k, v]) => v)
@@ -64,6 +63,8 @@ export const Player = () => {
     if (jump && Math.abs(velo.current[1]) < 0.05) {
       api.velocity.set(velo.current[0], JUMP_FORCE, velo.current[2]);
     }
+
+    run && moveForward ? (SPEED = 10) : (SPEED = 3);
   });
 
   return <mesh ref={ref}></mesh>;

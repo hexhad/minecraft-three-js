@@ -12,6 +12,13 @@ export const useStore = create((set) => ({
   //     { key: nanoid(), pos: [2, 0, 1], texture: "wood" },
   //   ],
   cubes: getLocalStorage("cubes") || [],
+
+  setWorld: (temp) => {
+    set(() => ({
+      cubes: temp,
+    }));
+  },
+
   addCube: (x, y, z) => {
     set((prev) => ({
       cubes: [

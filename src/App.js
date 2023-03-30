@@ -9,6 +9,7 @@ import { FirstPersionView } from "./components/FirstPersionView";
 import { Cubes } from "./components/Cubes";
 import { TextureSelector } from "./components/TextureSelector";
 import { Menu } from "./components/Menu.js";
+import { TemplateMenu } from "./components/TemplateMenu";
 
 export default function App() {
   return (
@@ -27,6 +28,7 @@ export default function App() {
       <div className="middle-target">+</div>
       <TextureSelector/>
       <Menu/>
+      <TemplateMenu/>
     </>
   );
 }

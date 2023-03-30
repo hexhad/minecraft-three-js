@@ -12,6 +12,7 @@ export const Menu = () => {
     <div className="menu">
       <button onClick={()=>resetWorld()}>Reset</button>
       <button onClick={()=>saveWorld()}>Save</button>
+      <button>use W,A,S,D,LSHIFT Keys and Mouse to move </button>
     </div>
   );
 };
